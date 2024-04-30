@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Blog"
@@ -6,6 +7,13 @@ export const metadata: Metadata = {
 
 export default function Blog(){
     return (
-        <h1>Blog Page</h1>
+        <>
+            <Link href="/">Home</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/products">Products</Link>
+            <Link href="/about">About-me</Link>
+
+            <h1>Blog Page</h1>
+          </>
     )
 }

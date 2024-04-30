@@ -1,4 +1,5 @@
 import { Metadata } from "next"
+import Link from "next/link";
 
 export const metadata: Metadata = {
     title: "Profile"
@@ -7,8 +8,13 @@ export const metadata: Metadata = {
 
 export default function Profile(){
     return (
-        <h1>
-          My Profile
-        </h1>
+
+            <>
+            <Link href="/">Home</Link>
+            <Link href="/blog">Blog</Link>
+            <Link href="/products">Products</Link>
+            <Link href="/about">About-me</Link>
+            <h1>Profile</h1>
+          </>
       );
 }
